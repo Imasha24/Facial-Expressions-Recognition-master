@@ -19,5 +19,4 @@ x = preprocess_input(x)
 preds = model.predict(x)
 print(preds)
 
-
-
+ 
