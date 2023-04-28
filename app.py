@@ -6,7 +6,7 @@ import numpy as np
 
 # Import the model
 from keras.models import load_model
-model = load_model('Babies_Face_Expression.h5')
+model = load_model('model.h5')
 
 # Define the Flask app
 app = Flask('myapp')
