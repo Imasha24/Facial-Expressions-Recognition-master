@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Babies Face Expression Detection System</title>
+	<link rel="stylesheet" type="text/css" href="Main.css">
+
+
+</head>
+<body>
+<center>
+	<h1>Babies Face Expression Detection System</h1>
+	<form id="img-form">
+		<input type="file" id="img-file" accept="image/*" onchange="previewImage();" required>
+		<button type="submit">Recognize Expression</button>
+	</form>
+	<div id="img-preview-container">
+		<img id="img-preview" src="" alt="Preview Image">
+	</div>
+	<div id="results-container"></div>
+</center>
+	<script>
+		// Preview the image
+		function previewImage() {
+			var preview = document.getElementById('img-preview');
+			var file = document.getElementById('img-file').files[0];
+			var reader = new FileReader();
+
+			reader.onload = function() {
+				preview.src = reader.result;
+			}
+
+			if (file) {
+				reader.readAsDataURL(file);
+			}
+		}
+
+        //API connecting
+        xhr.open('POST', 'http://localhost:5000/process_image', true);
+
+		// Send the image to the backend for processing
+		var form = document.getElementById('img-form');
+		form.addEventListener('submit', function(e) {
+			e.preventDefault();
+
+			var xhr = new XMLHttpRequest();
+			var formData = new FormData(form);
+
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState === 4 && xhr.status === 200) {
+					var resultsContainer = document.getElementById('results-container');
+					resultsContainer.innerHTML = '';
+
+					var response = JSON.parse(xhr.responseText);
+
+					for (var expression in response) {
+						var result = document.createElement('p');
+						result.innerHTML = expression + ': ' + response[expression];
+						resultsContainer.appendChild(result);
+					}
+				}
+			}
+
+			xhr.open('POST', '/process_image', true);
+			xhr.send(formData);
+		});
+	</script>
+</body>

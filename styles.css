@@ -1,0 +1,91 @@
+
+
+
+/* General styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #cb682a;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ca8a63;
+    border-bottom: 1px solid #ca8a63;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #333;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+/* Slideshow section */
+
+#slideshow {
+    background-color: #ec6d29;
+    padding: 40px;
+    text-align: center;
+}
+
+#slideshow h2 {
+    color: #333;
+}
+
+/* About section */
+
+#about {
+    padding: 40px;
+    background-color: #ff8a57;
+}
+
+/* Footer */
+
+footer {
+    background-color: #692800;
+    padding: 10px 20px;
+    text-align: center;
+}
