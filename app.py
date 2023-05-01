@@ -59,5 +59,5 @@ def process_image():
     # Return the response
     return jsonify(results)
 
-if __name__ == '__main__':
+if 'myapp' == '__main__':
     app.run()
