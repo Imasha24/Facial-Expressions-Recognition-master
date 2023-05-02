@@ -91,3 +91,31 @@ footer {
     text-align: center;
     color: #cccccc;
 }
+
+#center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #f7f7f7;
+}
+
+#center-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    margin: 0 10px;
+}
+
+.contact-icons i {
+    font-size: 20px;
+}
