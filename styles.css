@@ -9,12 +9,12 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #cb682a;
+    background-color: #f1ebe7;
 }
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
 }
 
 ul {
@@ -24,7 +24,7 @@ ul {
 }
 
 header {
-    background-color: #ca8a63;
+    background-color: #56ffcc;
     border-bottom: 1px solid #ca8a63;
     padding: 10px 20px;
 }
@@ -45,7 +45,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-    color: #333;
+    color: #000000;
 }
 
 main {
@@ -57,6 +57,7 @@ main {
 h2 {
     font-size: 48px;
     margin-bottom: 10px;
+    
 }
 
 p {
@@ -66,7 +67,7 @@ p {
 /* Slideshow section */
 
 #slideshow {
-    background-color: #ec6d29;
+    background-color: #65a08e;
     padding: 40px;
     text-align: center;
 }
@@ -79,13 +80,14 @@ p {
 
 #about {
     padding: 40px;
-    background-color: #ff8a57;
+    background-color: #0c6d50;
 }
 
 /* Footer */
 
 footer {
-    background-color: #692800;
+    background-color: #1f2c28;
     padding: 10px 20px;
     text-align: center;
+    color: #cccccc;
 }
