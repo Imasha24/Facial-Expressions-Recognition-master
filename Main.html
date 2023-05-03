@@ -17,6 +17,8 @@
 		<img id="img-preview" src="" alt="Preview Image">
 	</div>
 	<div id="results-container"></div>
+	
+	
 </center>
 	<script>
 		// Preview the image
@@ -57,11 +59,23 @@
 						result.innerHTML = expression + ': ' + response[expression];
 						resultsContainer.appendChild(result);
 					}
+
+					
 				}
 			}
 
+			
 			xhr.open('POST', '/process_image', true);
 			xhr.send(formData);
 		});
 	</script>
+
+	<footer>
+		<p>&copy; 2023 Babies Face Expression Detection System. All rights reserved.</p>
+	</footer>
 </body>
+</html>
+
+
+</body>
+</html>

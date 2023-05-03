@@ -53,3 +53,18 @@ button[type="submit"]:hover {
     margin: 10px 0;
   }
   
+
+  /* Footer */
+
+footer {
+  background-color: #1f2c28;
+  padding: 10px 20px;
+  text-align: center;
+line-height: 1.2px;
+margin: 0;
+  padding: 50;
+color: #cccccc;
+margin-top: 650px;
+
+
+}
